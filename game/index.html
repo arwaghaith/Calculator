@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/all.min.css">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>Game</title>
+</head>
+
+<body class="bg-light">
+    <!-- start Navbar  -->
+    <nav class="navbar navbar-expand-lg   fixed h-100 shadow">
+        <div class="container flex-column ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mb-5 m-auto" href="#home"><img  style="width:60px; height:60px;"src="E:\FullStack_2022\game\assets\img\logo.png" alt=""></a>
+
+            <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mb-2 mb-lg-0 flex-column  align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+       
+                
+                            
+                            <li class="nav-item dropdown show">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dis>
+                                    Games
+                                </a>
+                                <ul class=" dropdown-menu show" id="dropdown-menu"aria-labelledby="dropdownMenuLink" data-bs-popper="none ">
+                                    <li><a class="dropdown-item" href="#Racing">Racing</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#Zombie">Zombie</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#Action">Action</a></li>
+        
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacts">Contacts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a title="login" class="nav-link" href="#"><i class="fas fa-user"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                  
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- start Header -->
+    <header class="home" id="home">
+        <div class="banner">
+            <div class="overlay d-flex justify-content-center align-items-center w-100 vh-100">
+                <div class="welcome-msg  rounded text-white justify-content-center ">
+
+                    <pre
+                        class="d-flex  justify-content-center align-items-center "> Welcome To Our <span>Games</span> </pre>
+                    <p class="lead justify-content-center">                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem impedit laborum sint deserunt inventore!
+
+                    </p>
+                    <button class="bt0">Go To Play</button>        
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="About " id="About">
+        <div class="about-caption d-flex justify-content-center py-5">
+            <h3 class="text-uppercase position-relative text-white">Game play</h3>
+        </div>
+        <div class="service-fashions py-5">
+            <div class="container">
+                <div class="row g-5 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="item overflow-hidden rounded shadow position-relative">
+                            <img class="w-100" src="assets/img/ab1.jfif" alt="">
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item overflow-hidden rounded shadow position-relative">
+                            <img class="w-100" src="assets/img/ab2.jfif" alt="">
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item overflow-hidden rounded shadow position-relative">
+                            <img class="w-100" src="assets/img/ab3.jfif" alt="">
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item overflow-hidden rounded shadow position-relative">
+                            <img class="w-100" src="assets/img/ab4.jfif" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item overflow-hidden rounded shadow position-relative">
+                            <img class="w-100" src="assets/img/ab5.jfif" alt="">
+                           
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="imagesBox d-none" id="imagesBox">
+            <div class="imgContainer" id="imgContainer">
+                <i id="prevBtn" class=" fas fa-circle-arrow-left"></i>
+                <i id="closeBtn" class=" fas fa-circle-xmark position-absolute end-0 top-0"></i>
+                <i id="nextBtn" class=" fas fa-circle-arrow-right"></i>
+            </div>
+        </div>
+    </section>
+       <section class="Racing" id="Racing">
+        <div class="Racing-caption d-flex justify-content-center py-5">
+            <h3 class="text-uppercase position-relative text-white">Racing</h3>
+        </div>
+        
+       
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-md-4 ">
+                            <div class="rac overflow-hidden h-100">
+                                <img class="w-100 h-100" src="assets/img/re1.jfif" alt="">
+                                <div class="item-caption position-absolute top-50 start-50 translate-middle rounded a1  ">
+                                    <a href="https://www.youtube.com/watch?v=kyBbYndoyTE">Need For Speed</a>                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="rac overflow-hidden my-5 h-75">
+                                <img class="w-100 h-100" src="assets/img/ra2.jfif" alt="">
+                                <div class="item-caption position-absolute top-50 start-50 translate-middle rounded  a2">
+                                    <a href="https://www.youtube.com/watch?v=kyBbYndoyTE">Asphalt 9</a>                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="rac overflow-hidden h-100">
+                                <img class="w-100 h-100" src="assets/img/re3.jfif" alt="">
+                                <div class="item-caption position-absolute top-50 start-50 translate-middle rounded a3 ">
+                                    <a href="https://www.youtube.com/watch?v=kyBbYndoyTE" >Asphalt 9 block waves</a>                                </div>
+                            </div>
+                        </div>
+                        
+                      
+                    </div>
+                </div>
+            
+        </section>
+    <section class="Zombie" id="Zombie">
+        <div class="Zombie-caption d-flex justify-content-center py-5">
+            <h3 class="text-uppercase position-relative text-white">Zombie</h3>
+        </div>
+        
+       
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-md-4 ">
+                            <div class="city overflow-hidden">
+                                <img class="w-100 h-100" src="assets/img/zo1.jfif" alt="">
+                                <div class="item-caption position-absolute top-50 start-50 translate-middle rounded b1 ">
+                                    <a href="https://www.youtube.com/watch?v=kyBbYndoyTE">Zombie Wave I</a>                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="city overflow-hidden my-5">
+                                <img class="w-100 h-100" src="assets/img/zo2.jfif" alt="">
+                                <div class="item-caption position-absolute top-50 start-50 translate-middle rounded b2">
+                                    <a href="https://www.youtube.com/watch?v=kyBbYndoyTE">Zombie Wave II</a>                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="city overflow-hidden">
+                                <img class="w-100 h-100" src="assets/img/zo3.jfif" alt="">
+                                <div class="item-caption position-absolute top-50 start-50 translate-middle rounded b3 ">
+                                    <a href="https://www.youtube.com/watch?v=kyBbYndoyTE" >Zombie Wave III</a>                                </div>
+                            </div>
+                        </div>
+                        
+                      
+                    </div>
+                </div>
+            
+        </section>
+        <section class="Action" id="Action">
+            <div class="Action-caption d-flex justify-content-center py-5">
+                <h3 class="text-uppercase position-relative text-white">Action</h3>
+            </div>
+            
+           
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-md-4 ">
+                                <div class="act overflow-hidden w-100 h-100">
+                                    <img class="w-100 h-100" src="assets/img/ac1.jfif" alt="">
+                                    <div class="item-caption position-absolute top-50 start-50 translate-middle rounded  c1">
+                                        <a href="https://www.youtube.com/watch?v=kyBbYndoyTE">Gta</a>                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <div class="act overflow-hidden my-5 w-100 h-100">
+                                    <img class="w-100 h-100" src="assets/img/ac2.jfif" alt="">
+                                    <div class="item-caption position-absolute top-50 start-50 translate-middle rounded c2 ">
+                                        <a href="https://www.youtube.com/watch?v=kyBbYndoyTE">Hunter</a>                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="act overflow-hidden w-100 h-100">
+                                    <img class="w-100 h-100" src="assets/img/ac3.jfif" alt="">
+                                    <div class="item-caption position-absolute top-50 start-50 translate-middle rounded c3 ">
+                                        <a href="https://www.youtube.com/watch?v=kyBbYndoyTE" >God of war</a>                                </div>
+                                </div>
+                            </div>
+                            
+                          
+                        </div>
+                    </div>
+                
+            </section>
+            <br><br><br><br><br><br><br><br><br><br>
+    <section id="contacts" class="contacts  bg-white p-5 shadow rounded">
+        <div class="contact-caption text-center mb-5 d-flex justify-content-center align-items-center ">
+            Contacts
+        </div>
+
+        <form >
+            <div class="for ">
+                <input type="text" class="form-con" id="exampleInputTitle" aria-describedby="emailHelp" placeholder="Enter Game Name">
+              </div>
+            <div class="for">
+              <select class="form-sel" aria-label="Default select example">
+                <option selected class="sel">Select Game Play</option>
+                <option value="1" class="sel">Racing</option>
+                <option value="2" class="sel">Zombie</option>
+                <option value="3" class="sel">Actions</option>
+              </select>
+            </div>
+            <div class="for ">
+              <input type="text" class="form-con" id="exampleInputMsg" >
+            </div>
+          
+            <button class="bt1">Send Request</button>        
+          </form>
+    </section>
+
+</body>
+<footer class="bg-dark py-3 text-white text-center">
+    <h5>Copyright &copy;Reserved <span>Arwa Ghaith</span></h5>
+    <h3>in</h3>
+</footer>
+
+<script src="assets/js/app.js"></script>
+
+</html>

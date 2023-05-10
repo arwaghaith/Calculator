@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;500;600;700&display=swap');
+
+:root {
+    --main-color: #f70776;
+    --shadow-color: rgba(247, 7, 118, 0.7);
+    --transition: .6s;
+}
+
+body {
+    background: linear-gradient(45deg, #132743, #5585b5);
+    font-family: 'Nerko One', cursive;
+    font-weight: bold;
+
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    margin: 1rem 0;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 2rem;
+}
+
+.form-con:hover.form-con::placeholder {
+
+    color: var(--main-color);
+    position: fixed;
+    z-index: 9999;
+}
+
+.form-sel {
+    width: 100%;
+}
+
+
+
+
+.form-sel:focus.form-sel {
+
+
+    color: var(--main-color);
+    border: 4px rgba(247, 7, 118, 0.7);
+    outline-color: rgba(247, 7, 118, 0.7);
+    outline-width: 4px;
+    outline-style: solid;
+
+}
+
+.sel {
+
+    color: var(--main-color);
+}
+
+.form-con:focus.form-con::placeholder {
+
+    color: var(--main-color);
+}
+
+.nav-link {
+
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--main-color) !important;
+}
+
+
+.active {
+    color: var(--main-color) !important;
+}
+
+/* Start banner  */
+.banner {
+    background-image: url(../img/bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    background: linear-gradient(90deg, rgba(247, 7, 118, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.welcome-msg pre {
+    font-weight: bold;
+    font-size: 1.5em;
+
+}
+
+.welcome-msg span {
+    font-weight: bold;
+
+    color: var(--main-color);
+    font-size: 1.5em;
+
+}
+
+.about-caption h3 {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 2px 2px 8px #000000;
+
+
+
+}
+
+.about-caption::before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: .2rem;
+    text-align: center;
+    background-color: #f70776;
+    z-index: 99;
+    bottom: -18%;
+
+
+}
+
+.col-md-4 .item {
+    position: relative;
+    overflow: hidden;
+}
+
+.col-md-4 .item::before {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(247, 7, 118, 0.8));
+}
+
+.col-md-4 .item::after {
+    content: '';
+    position: absolute;
+    z-index: 888;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(247, 7, 118, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.col-md-4 .item:hover.item::before {
+    bottom: 100%;
+    transition-duration: var(--transition);
+    transition-timing-function: ease-in-out;
+
+
+    transform: skew(120deg);
+
+}
+
+.col-md-4 .item:hover.item::after {
+    top: 100%;
+    transition-duration: var(--transition);
+    transition-timing-function: ease-in-out;
+
+
+    transform: skew(120deg);
+
+}
+
+
+img {
+    height: 600px;
+    cursor: pointer;
+    width: 200px;
+}
+
+
+
+
+.text-header {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.country-caption {
+
+    background-image: url(../img/eg6.jpg);
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rac {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.rac::after {
+
+    content: '';
+    background: linear-gradient(90deg, rgba(247, 7, 118, 0.6), rgba(0, 0, 0, 0.6));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 100%;
+    left: 0%;
+    transition: var(--transition);
+    z-index: 10;
+
+}
+
+.rac:hover.rac::after {
+    bottom: 0%;
+
+
+}
+
+.city {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.city::after {
+
+    content: '';
+    background: linear-gradient(90deg, rgba(247, 7, 118, 0.6), rgba(0, 0, 0, 0.6));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transition: var(--transition);
+
+}
+
+.act {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.act::after {
+
+    content: '';
+    background: linear-gradient(90deg, rgba(247, 7, 118, 0.6), rgba(0, 0, 0, 0.6));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 100%;
+    left: 0%;
+    transition: var(--transition);
+
+}
+
+.act:hover.act::after {
+    bottom: 0%;
+
+
+}
+
+.city:hover.city::after {
+    top: 0%;
+
+
+}
+.act:focus.act::after {
+    bottom: 100%;
+
+
+}
+
+.city:focus.city::after {
+    top: 100%;
+
+
+}
+
+
+#contacts {
+    width: 80%;
+    left: 10%;
+    height: 90%;
+    text-align: center;
+    transform: translate(10%, -10%);
+    bottom: -10%;
+
+}
+
+
+
+.contact-caption {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 2rem;
+    text-shadow: 2px 2px 8px #000000;
+
+
+
+}
+
+.contact-caption::before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: .2rem;
+    text-align: center;
+    top: 65%;
+
+
+    background-color: var(--main-color);
+    font-weight: light;
+
+
+}
+
+form {
+    padding-bottom: 20px;
+}
+
+.for {
+    margin-bottom: 20px;
+
+}
+
+
+
+.form-con:focus.form-con {
+
+    border: 4px rgba(247, 7, 118, 0.7);
+    outline-color: rgba(247, 7, 118, 0.7);
+    outline-width: 4px;
+    outline-style: solid;
+
+}
+
+.form-con {
+    width: 100%;
+}
+
+#exampleInputMsg {
+    height: 300px;
+    cursor: var(--shadow-color)
+}
+
+footer span {
+    color: var(--main-color)
+}
+
+
+
+footer {
+    top: 20px;
+    transform: translateX(0%, 20%);
+}
+
+.form-select option:hover.form-select option {
+    color: var(--main-color);
+    position: absolute;
+}
+.bt1 {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    border-width: 0ch;
+    background-color: white;
+
+}
+
+.bt1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: -1;
+    transition: var(--transition);
+    border-radius: inherit;
+    border-color: #f70776;
+    border-color: #f70776;
+
+}
+
+.bt1:hover.bt1::after {
+    right: 0%;
+
+
+}
+
+.bt0 {
+
+    position: absolute;
+    z-index: 1;
+    border: 1px solid var(--main-color);
+    background-color: transparent;
+    color: white;
+    left: 45%;
+    transform: translate(45%, 0%)
+}
+
+.bt0:hover {
+    border-color: black;
+}
+.navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar {
+    height: 100vh;
+    width: 20vh;
+    position: fixed;
+    z-index: 999;
+    right: 0%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: rgba(0, 0, 0, .1);
+
+
+}
+
+.navbar:hover {
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    right: 0%;
+    width: 90vh;
+    background-color: rgba(0, 0, 0, .5);
+
+}
+
+
+.navbar-brand {
+    animation: animate 1s infinite alternate;
+    
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(90deg);
+        opacity: 1;
+    }
+}
+.dropdown {
+    position: relative;
+} 
+
+
+
+
+.dropdown-menu {
+    background-color: #000;
+    display: none;
+}
+
+.dropdown-menu li a {
+    transition: var(--transition);
+    color: #fff;
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--main-color);
+}
+
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.Racing-caption h3 {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 2px 2px 8px #000000;
+
+
+
+}
+li {
+    list-style: none;
+}
+.dropdown-menu[data-bs-popper] {
+    left: -160px;
+    top: 0;
+}
+
+.Racing-caption::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: .2rem;
+    text-align: center;
+    background-color: #f70776;
+    position: absolute;
+    top: 2320px;
+
+    
+}
+
+.Zombie-caption h3 {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 2px 2px 8px #000000;
+
+
+
+}
+.Zombie-caption::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    text-align: center;
+    background-color: #f70776;
+    position: absolute;
+    bottom: -2600px;
+
+}
+
+.Action-caption h3 {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 2px 2px 8px #000000;
+
+
+
+}
+
+
+
+
+.Action-caption h3::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: .2rem;
+    text-align: center;
+    background-color: #f70776;
+    position: absolute;
+    top: 70%;
+
+}
+
+/* .city .item-caption {
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+
+.
+ .city:hover .item-caption {
+    opacity: 1;
+} */
+/* .city .item-caption a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px #000;
+
+} */
+
+.item-caption a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration-line: none;
+    font-size: 0.8em;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+
+    align-items: center;
+
+    text-shadow: 3px 3px 10px #000;
+    color: #fff;
+
+
+}
+
+.item-caption {
+    z-index: -1;
+    transition: var(--transition);
+    border: 1px solid black;
+    ;
+
+    text-align: center;
+
+
+
+
+
+}
+
+.a1 {
+    width: 7rem;
+    height: 2rem;
+
+}
+
+.a2 {
+    width: 5rem;
+    height: 2rem;
+}
+
+.a3 {
+    width: 8rem;
+    height: 2rem;
+
+}
+
+.b1 {
+    width: 8rem;
+    height: 2rem;
+
+}
+
+.b2 {
+    width: 8rem;
+    height: 2rem;
+}
+
+.b3 {
+    width: 9rem;
+    height: 2rem;
+
+}
+
+.c1 {
+    width: 3rem;
+    height: 1.5rem;
+
+}
+
+.c2 {
+    width: 4rem;
+    height: 1.5rem;
+}
+
+.c3 {
+    width: 6rem;
+    height: 2rem;
+
+}
+
+.city:hover .item-caption {
+    left: 50% !important;
+    transition-delay: var(--transition);
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 999;
+
+
+}
+
+.item-caption:hover {
+    background-color: var(--main-color);
+    border-color: #f70776;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+
+}
+
+.rac:hover .item-caption {
+    left: 50% !important;
+    transition-delay: var(--transition);
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 999;
+
+
+}
+
+.act:hover .item-caption {
+    left: 50% !important;
+    transition-delay: var(--transition);
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 999;
+
+
+}
+
+ .imagesBox {
+    position: fixed;
+    z-index: 99;
+    left: 0;right: 0;
+    bottom: 0;top: 0;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer {
+    width: 50%;
+    height: 500px;
+    background-image: url(../images/arabic-kebab-sandwich-veggies-with-french-fries.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.imgContainer i {
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 20px;
+}.imagesBox {
+    position: fixed;
+    z-index: 999999999;
+    left: 0;right: 0;
+    bottom: 0;top: 0;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imgContainer {
+    width: 50%;
+    height: 500px;
+    background-image: url(../images/arabic-kebab-sandwich-veggies-with-french-fries.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.imgContainer i {
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 20px;
+}
